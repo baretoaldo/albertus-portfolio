@@ -551,20 +551,90 @@ section {
     color: var(--text-secondary);
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .header-container {
+        padding: 0 2rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+}
+
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
     }
 
     .experience-item {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .experience-year {
+        margin-bottom: 0.5rem;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .header-container {
+        padding: 0 1.5rem;
+    }
+
+    .header {
+        padding: 1.5rem 0;
+    }
+
+    .language-switcher {
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: 0.4rem;
+    }
+
+    .lang-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8125rem;
+    }
+
+    section {
+        padding: clamp(3rem, 10vh, 6rem) 0;
+    }
+
+    .hero {
+        padding-top: 6rem;
+    }
+
+    .profile-img-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+
     .hero-title {
-        font-size: clamp(2rem, 10vw, 3rem);
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        margin-bottom: 1.5rem;
     }
 
     .hero-meta {
@@ -573,21 +643,117 @@ section {
         gap: 0.5rem;
     }
 
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-location {
+        font-size: 0.9375rem;
+    }
+
+    .hero-content {
+        margin-bottom: 3rem;
+    }
+
+    .marquee-container {
+        padding: 1.5rem 0;
+    }
+
+    .marquee-content {
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .marquee-content span {
+        font-size: 1rem;
+    }
+
     .section-number {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .section-title {
-        font-size: clamp(2rem, 8vw, 2.5rem);
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+        margin-bottom: 2.5rem;
+    }
+
+    .about-content p {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+    }
+
+    .about-stats {
+        gap: 1.5rem;
+    }
+
+    .stat {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
     }
 
     .capabilities-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .capability-item {
+        padding: 1.5rem;
+    }
+
+    .capability-title {
+        font-size: 1.5rem;
+    }
+
+    .capability-desc {
+        font-size: 0.9375rem;
+    }
+
+    .experience-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience-content p {
+        font-size: 0.9375rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cert-item {
+        padding: 2rem 1.5rem;
+    }
+
+    .cert-icon {
+        font-size: 2.5rem;
+    }
+
+    .cert-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.0625rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-method {
+        padding: 1.5rem;
+        font-size: 1.0625rem;
+    }
+
+    .contact-method i {
+        font-size: 1.25rem;
     }
 
     .footer-content {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
     }
 
@@ -595,28 +761,183 @@ section {
         align-items: center;
     }
 
-    .marquee-content span {
+    .nav-link {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .nav-email {
         font-size: 1rem;
+    }
+
+    .nav-social a {
+        font-size: 1.25rem;
     }
 }
 
 @media (max-width: 480px) {
-    .language-switcher {
-        top: 1rem;
-        right: 1rem;
+    .container {
+        padding: 0 1.25rem;
     }
 
-    .nav-link {
-        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    .header-container {
+        padding: 0 1.25rem;
+    }
+
+    .language-switcher {
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .hero-title {
+        font-size: clamp(1.75rem, 10vw, 2.5rem);
+    }
+
+    .section-number {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+        margin-bottom: 2rem;
     }
 
     .about-content p {
         font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .stat {
+        padding: 1.25rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+    }
+
+    .capability-item {
+        padding: 1.25rem;
+    }
+
+    .capability-title {
+        font-size: 1.25rem;
+    }
+
+    .capability-desc {
+        font-size: 0.875rem;
+    }
+
+    .capability-tags {
+        gap: 0.4rem;
+    }
+
+    .capability-tags span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8125rem;
+    }
+
+    .experience-item {
+        gap: 0.75rem;
+        padding-bottom: 2rem;
+    }
+
+    .experience-year {
+        font-size: 1rem;
+    }
+
+    .experience-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .experience-content p {
+        font-size: 0.875rem;
+    }
+
+    .cert-item {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .cert-icon {
+        font-size: 2.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .cert-item h3 {
+        font-size: 1.125rem;
+    }
+
+    .cert-issuer {
+        font-size: 0.9375rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-method {
+        padding: 1.25rem;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .contact-method:hover {
+        transform: translateX(5px);
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-tagline {
+        font-size: 0.8125rem;
+    }
+
+    .nav-link {
+        font-size: clamp(1.5rem, 10vw, 2rem);
+    }
+
+    .nav-contact {
+        gap: 0.75rem;
+    }
+
+    .nav-email {
+        font-size: 0.9375rem;
+    }
+
+    .nav-social {
+        gap: 1.25rem;
+    }
+
+    .nav-social a {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.625rem;
+        line-height: 1.2;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
     }
 
     .capability-item,
     .cert-item,
     .contact-method {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
