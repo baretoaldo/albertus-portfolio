@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Albertus Doro Bunga - Professional Blockchain & Full-Stack Developer with 6 years experience in Solidity, JavaScript, TypeScript, Python, and Go">
+    <meta name="keywords" content="Blockchain Developer, Solidity, Web3, Smart Contracts, Full-Stack Developer, JavaScript, TypeScript, Python, Go">
+    <meta name="author" content="Albertus Doro Bunga">
+    <meta property="og:title" content="Albertus Doro Bunga - Blockchain Developer">
+    <meta property="og:description" content="Professional Blockchain & Full-Stack Developer specializing in Solidity and modern web technologies">
+    <meta property="og:type" content="website">
+    <title>Albertus Doro Bunga | Blockchain & Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="lang-en" class="lang-btn active" data-lang="en">
+            <span class="flag">🇬🇧</span> EN
+        </button>
+        <button id="lang-id" class="lang-btn" data-lang="id">
+            <span class="flag">🇮🇩</span> ID
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ADB</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-i18n="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav-experience">Experience</a></li>
+                <li><a href="#certifications" class="nav-link" data-i18n="nav-certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="me.jpg" alt="Albertus Doro Bunga">
+                    <div class="image-glow"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting" data-i18n="hero-greeting">Hello, I'm</span>
+                    <span class="name">Albertus Doro Bunga</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" data-i18n="hero-subtitle">Blockchain & Full-Stack Developer</span>
+                </h2>
+                <p class="hero-description" data-i18n="hero-description">
+                    Building the future of decentralized applications with 6 years of expertise in blockchain development and modern web technologies
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero-cta-contact">Get in Touch</a>
+                    <a href="#experience" class="btn btn-secondary" data-i18n="hero-cta-projects">View Projects</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://t.me/aldo_tamvan" target="_blank" rel="noopener" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://twitter.com/All79247631" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:baretoaldo474@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about-p1">
+                        I'm a passionate blockchain and full-stack developer with over 6 years of experience building decentralized applications and scalable web solutions. My expertise spans across Solidity smart contract development, modern JavaScript frameworks, and backend technologies.
+                    </p>
+                    <p data-i18n="about-p2">
+                        Beyond coding, I'm an active contributor to the blockchain community as a moderator in several crypto projects, including Monas Testnet and other innovative blockchain initiatives. When I'm not developing, you'll find me playing guitar 🎸 and exploring new technologies.
+                    </p>
+                    <p data-i18n="about-p3">
+                        I hold certifications from both Amazon Web Services and Alibaba Cloud, demonstrating my commitment to staying at the forefront of cloud and blockchain technologies.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>6+</h3>
+                        <p data-i18n="stat-years">Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5+</h3>
+                        <p data-i18n="stat-languages">Programming Languages</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2</h3>
+                        <p data-i18n="stat-certs">Cloud Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-ethereum"></i>
+                    </div>
+                    <h3>Solidity</h3>
+                    <p data-i18n="skill-solidity">Smart contract development, DeFi protocols, NFT platforms, and Web3 integration</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p data-i18n="skill-js">React, Node.js, Express, Vue.js, and modern ES6+ features</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p data-i18n="skill-ts">Type-safe development, advanced patterns, and enterprise applications</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p data-i18n="skill-python">Backend development, automation, data processing, and API integration</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Go</h3>
+                    <p data-i18n="skill-go">High-performance backend services, microservices, and blockchain nodes</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 data-i18n="skill-cloud-title">Cloud & DevOps</h3>
+                    <p data-i18n="skill-cloud">AWS, Alibaba Cloud, Docker, CI/CD, and infrastructure automation</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="experience-title">Experience & Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp1-title">Blockchain Developer & Community Moderator</h3>
+                        <span class="timeline-date" data-i18n="exp1-date">2018 - Present</span>
+                        <p data-i18n="exp1-desc">
+                            Leading development and community management for multiple blockchain projects including Monas Testnet. Responsible for smart contract development, testing infrastructure, and fostering community engagement.
+                        </p>
+                        <ul class="timeline-tags">
+                            <li>Solidity</li>
+                            <li>Web3.js</li>
+                            <li>Community Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp2-title">DeFi Protocol Development</h3>
+                        <span class="timeline-date" data-i18n="exp2-date">2020 - 2023</span>
+                        <p data-i18n="exp2-desc">
+                            Designed and implemented decentralized finance protocols with focus on security, gas optimization, and user experience. Built lending platforms, AMM systems, and yield farming mechanisms.
+                        </p>
+                        <ul class="timeline-tags">
+                            <li>Smart Contracts</li>
+                            <li>DeFi</li>
+                            <li>Security Audits</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp3-title">Full-Stack Web Development</h3>
+                        <span class="timeline-date" data-i18n="exp3-date">2018 - Present</span>
+                        <p data-i18n="exp3-desc">
+                            Developed scalable web applications using modern frameworks and cloud infrastructure. Specialized in integrating blockchain functionality with traditional web technologies.
+                        </p>
+                        <ul class="timeline-tags">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cert-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Certified Developer</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-description" data-i18n="cert-aws-desc">
+                        Certified in designing, developing, and maintaining AWS-based applications with best practices for security, scalability, and performance.
+                    </p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Alibaba Cloud Certified Developer</h3>
+                    <p class="cert-issuer">Alibaba Cloud</p>
+                    <p class="cert-description" data-i18n="cert-alibaba-desc">
+                        Expert in Alibaba Cloud services, infrastructure management, and cloud-native application development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact-title">Get in Touch</h2>
+            <p class="contact-subtitle" data-i18n="contact-subtitle">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div class="contact-grid">
+                <a href="https://t.me/aldo_tamvan" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>@aldo_tamvan</p>
+                </a>
+                <a href="mailto:baretoaldo474@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>baretoaldo474@gmail.com</p>
+                </a>
+                <a href="https://twitter.com/All79247631" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>@All79247631</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Albertus Doro Bunga. <span data-i18n="footer-rights">All rights reserved.</span></p>
+            <p class="footer-hobby">
+                <i class="fas fa-guitar"></i> <span data-i18n="footer-hobby">Guitar enthusiast & blockchain builder</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
