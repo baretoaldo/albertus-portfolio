@@ -31,6 +31,7 @@ const translations = {
         'exp3-title': 'Full-Stack Web Development',
         'exp3-desc': 'Developed scalable web applications using modern frameworks and cloud infrastructure. Specialized in integrating blockchain functionality with traditional web technologies.',
         'cert-title': 'Certifications',
+        'view-cert': 'View Certificate',
         'contact-title': "Let's Work Together",
         'contact-subtitle': "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
         'footer-hobby': 'Guitar enthusiast & blockchain builder'
@@ -67,6 +68,7 @@ const translations = {
         'exp3-title': 'Pengembangan Web Full-Stack',
         'exp3-desc': 'Mengembangkan aplikasi web yang dapat diskalakan menggunakan framework modern dan infrastruktur cloud. Spesialisasi dalam mengintegrasikan fungsionalitas blockchain dengan teknologi web tradisional.',
         'cert-title': 'Sertifikasi',
+        'view-cert': 'Lihat Sertifikat',
         'contact-title': 'Mari Bekerja Sama',
         'contact-subtitle': 'Saya selalu terbuka untuk mendiskusikan proyek baru, ide kreatif, atau peluang untuk menjadi bagian dari visi Anda.',
         'footer-hobby': 'Penggemar gitar & pembangun blockchain'
@@ -155,5 +157,42 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+    
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('certModalImg');
+    const modalCaption = document.querySelector('.cert-modal-caption');
+    const closeModal = document.querySelector('.cert-modal-close');
+    
+    document.querySelectorAll('.view-cert-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const certSrc = btn.getAttribute('data-cert');
+            const certAlt = btn.closest('.cert-item').querySelector('h3').textContent;
+            
+            modal.style.display = 'block';
+            modalImg.src = certSrc;
+            modalCaption.textContent = certAlt;
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    });
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
     });
 });

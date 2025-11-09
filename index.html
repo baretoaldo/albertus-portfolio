@@ -241,18 +241,47 @@
                 
                 <div class="cert-grid">
                     <div class="cert-item">
-                        <i class="fab fa-aws cert-icon"></i>
-                        <h3>AWS Certified Developer</h3>
-                        <p class="cert-issuer">Amazon Web Services</p>
+                        <div class="cert-image-wrapper">
+                            <img src="aws-cert.png" alt="AWS Certified Developer - Associate" class="cert-image">
+                            <div class="cert-overlay">
+                                <button class="view-cert-btn" data-cert="aws-cert.png">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span data-i18n="view-cert">View Certificate</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Developer - Associate</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <p class="cert-date">Jun 2020 - Jun 2023</p>
+                        </div>
                     </div>
                     <div class="cert-item">
-                        <i class="fas fa-cloud cert-icon"></i>
-                        <h3>Alibaba Cloud Certified Developer</h3>
-                        <p class="cert-issuer">Alibaba Cloud</p>
+                        <div class="cert-image-wrapper">
+                            <img src="alibaba-cert.png" alt="Alibaba Cloud Certified - Apsara Clouder" class="cert-image">
+                            <div class="cert-overlay">
+                                <button class="view-cert-btn" data-cert="alibaba-cert.png">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span data-i18n="view-cert">View Certificate</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Apsara Clouder - Cloud Computing</h3>
+                            <p class="cert-issuer">Alibaba Cloud</p>
+                            <p class="cert-date">Valid Until Jan 2023</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Certificate Modal -->
+        <div id="certModal" class="cert-modal">
+            <span class="cert-modal-close">&times;</span>
+            <img class="cert-modal-content" id="certModalImg">
+            <div class="cert-modal-caption"></div>
+        </div>
 
         <section id="contact" class="contact">
             <div class="container">
