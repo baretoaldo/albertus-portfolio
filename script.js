@@ -58,7 +58,7 @@ const translations = {
         'hero-cta-projects': 'Lihat Proyek',
         'about-title': 'Tentang Saya',
         'about-p1': 'Saya adalah pengembang blockchain dan full-stack yang bersemangat dengan pengalaman lebih dari 6 tahun dalam membangun aplikasi terdesentralisasi dan solusi web yang dapat diskalakan. Keahlian saya mencakup pengembangan smart contract Solidity, framework JavaScript modern, dan teknologi backend.',
-        'about-p2': 'Selain coding, saya adalah kontributor aktif dalam komunitas blockchain sebagai moderator di beberapa proyek kripto, termasuk Monas Testnet dan inisiatif blockchain inovatif lainnya. Ketika tidak sedang mengembangkan, Anda akan menemukan saya bermain gitar 🎸 dan mengeksplorasi teknologi baru.',
+        'about-p2': 'Selain coding, saya adalah kontributor aktif dalam komunitas blockchain sebagai moderator di beberapa proyek kripto, termasuk Monas Testnet dan inisiatif blockchain inovatif lainnya. Di waktu luang, saya senang bermain gitar 🎸 dan mengeksplorasi teknologi baru.',
         'about-p3': 'Saya memiliki sertifikasi dari Amazon Web Services dan Alibaba Cloud, menunjukkan komitmen saya untuk tetap berada di garis depan teknologi cloud dan blockchain.',
         'stat-years': 'Tahun Pengalaman',
         'stat-languages': 'Bahasa Pemrograman',
