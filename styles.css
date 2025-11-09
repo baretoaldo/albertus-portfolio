@@ -15,6 +15,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -24,12 +26,17 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     font-size: 16px;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
 }
 
 .container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 clamp(1.5rem, 5vw, 4rem);
+    box-sizing: border-box;
 }
 
 .language-switcher {
@@ -191,6 +198,9 @@ body {
 section {
     padding: clamp(4rem, 15vh, 10rem) 0;
     position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -220,11 +230,14 @@ section {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size: clamp(2rem, 8vw, 7rem);
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .text-reveal {
@@ -276,11 +289,14 @@ section {
     border-bottom: 1px solid var(--border);
     padding: 2rem 0;
     overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .marquee {
     display: flex;
     white-space: nowrap;
+    width: 100%;
 }
 
 .marquee-content {
@@ -316,10 +332,12 @@ section {
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(1.75rem, 6vw, 4rem);
     font-weight: 700;
     margin-bottom: 4rem;
     letter-spacing: -0.02em;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .about-grid {
@@ -902,21 +920,34 @@ section {
 }
 
 @media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
     .container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
+        max-width: 100%;
     }
 
     .header-container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
+        max-width: 100%;
     }
 
     .language-switcher {
-        top: 1.25rem;
-        right: 1.25rem;
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.75rem;
     }
 
     .hero-title {
-        font-size: clamp(1.75rem, 10vw, 2.5rem);
+        font-size: clamp(1.5rem, 9vw, 2.25rem);
+        word-break: break-word;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .section-number {
@@ -924,13 +955,19 @@ section {
     }
 
     .section-title {
-        font-size: clamp(1.5rem, 8vw, 2rem);
+        font-size: clamp(1.25rem, 7vw, 1.75rem);
         margin-bottom: 2rem;
+        padding: 0 0.5rem;
     }
 
     .about-content p {
-        font-size: 1rem;
+        font-size: 0.9375rem;
         margin-bottom: 1.25rem;
+        line-height: 1.6;
+    }
+
+    .section-number {
+        padding: 0 0.5rem;
     }
 
     .stat {
